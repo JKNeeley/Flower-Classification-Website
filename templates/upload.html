@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+    <title>Flower Classification</title>
+</head>
+<body>
+    <nav>
+        <a class="brand" href="#">Flower Classification</a>
+    </nav>
+    <p>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </p>
+    <h2>Select a file to upload</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Predict">
+    </form>
+    <p>
+        {% if prediction %}
+            <h2>Prediction: {{ prediction }}</h2>
+            <h3>Class Probabilities:</h3>
+            <ul>
+                {% for label, prob in probabilities.items() %}
+                    <li>{{ label }}: {{ prob }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </p>
+</body></html>

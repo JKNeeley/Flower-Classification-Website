@@ -25,6 +25,7 @@ __________________
     pip install pydot
     brew install graphviz
     pip install scipy
+    pip install flask
 
 ## Download the data sets in an input folder
  - https://www.kaggle.com/datasets/imsparsh/flowers-dataset
@@ -32,21 +33,35 @@ __________________
 
  The structure should look like this 
     project_directory/
-    |-- flower-classification.py
+    |-- app.py
+    |-- flower_classification.py
+    |-- flower_classification-results.py
     |-- input
     |   |--flower-recognition / ...
     |   |--flower-dataset / ...
     |-- LICENSE
     |-- README.md
+    |-- static/
+    |   |-- uploads/
+    |-- templates/
+    |   |-- upload.html
 
 ## Train the model 
     python flower-classification.py
 
-## View training results
-- update line 18 with the best model available
--- the decimal number at the end of the file name is the accuracy percentage
-- run the results
+## Update model in flower-classification-results.py
+ _This step is optional if you do not plan on viewing your model results_
+
+- Locate the best-trained model by finding the file with the largest percentage decimal at the end.
+- Update file name in line 18 with the file name you have located.
+  
+## View the results
     python flower_classification-results.py
+
+## Run the web application
+    python -m flask run 
+or  
+    python app.py
 __________________
 
 # Project Proposal

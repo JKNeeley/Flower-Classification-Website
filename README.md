@@ -12,6 +12,20 @@ __________________
 ## Clone into the repository locally
     git clone https://github.com/JKNeeley/Flower-Classification-Website.git
 
+## Install Python if it has not been already
+    brew install python
+
+## Create and enter a virtual environment in Python3
+    python -m venv venv
+    source venv/bin/activate
+
+## Install the necessary additional services if they are not already
+    pip install TensorFlow
+    pip install matplotlib
+    pip install pydot
+    brew install graphviz
+    pip install scipy
+
 ## Download the data sets in an input folder
  - https://www.kaggle.com/datasets/imsparsh/flowers-dataset
  - https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
@@ -25,6 +39,14 @@ __________________
     |-- LICENSE
     |-- README.md
 
+## Train the model 
+    python flower-classification.py
+
+## View training results
+- update line 18 with the best model available
+-- the decimal number at the end of the file name is the accuracy percentage
+- run the results
+    python flower_classification-results.py
 __________________
 
 # Project Proposal
@@ -74,7 +96,7 @@ __________________
 
 Efforts were made to generate files completely on my own, but due to time constraints and an unfamiliarity with Flask and Tensorflow, I used sources oustide of myself and previous coursework to create this successful application. Instead of generating the entire model from scratch, I focused on learning from others and learning the implementation of Tensorflow withing Flask and the creation of predictions and the custom layers.
 
-## Datasets found from 
+## Datasets found at
  - https://www.kaggle.com/datasets/imsparsh/flowers-dataset
  - https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
 

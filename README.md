@@ -7,6 +7,26 @@ This project is being developed as the final project of _Independent Study: Mach
 
 __________________
 
+# Running the Application Locally
+
+## Clone into the repository locally
+    git clone https://github.com/JKNeeley/Flower-Classification-Website.git
+
+## Download the data sets in an input folder
+ - https://www.kaggle.com/datasets/imsparsh/flowers-dataset
+ - https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
+
+ The structure should look like this 
+    project_directory/
+    |-- flower-classification.py
+    |-- input
+    |   |--flower-recognition / ...
+    |   |--flower-dataset / ...
+    |-- LICENSE
+    |-- README.md
+
+__________________
+
 # Project Proposal
 
 ## Introduction

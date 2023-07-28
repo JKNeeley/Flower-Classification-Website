@@ -7,36 +7,6 @@ This project is being developed as the final project of _Independent Study: Mach
 
 __________________
 
-# Running the Application Locally
-
-## Clone into the repository locally
-    git clone https://github.com/JKNeeley/Flower-Classification-Website.git
-
-## Install Python3 if it has not been already
-
-## Create and enter a virtual environment in Python3
-    python -m venv venv
-    source venv/bin/activate
-
-## Install the necessary additional services if they are not already
-    pip install TensorFlow
-    pip install pillow
-    pip install flask
-    pip install matplotlib
-    pip install pydot
-    brew install graphviz
-    pip install scipy
-
-## Train the model 
-    python tl-model.py
-
-## Run the application using 
-    python -m flask run 
-or  
-    python app.py
-
-__________________
-
 # Project Proposal
 
 ## Introduction
